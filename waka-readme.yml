@@ -10,7 +10,7 @@ on:
 jobs:
   update-readme:
     name: WakaReadme DevMetrics
-    runs-on: mac-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: nguyenhung/waka-readme@main
         with:
@@ -34,7 +34,7 @@ jobs:
           TARGET_BRANCH: main # optional
           TARGET_PATH: README.md # optional
           COMMITTER_NAME: GitHubActionBot # optional
-          COMMITTER_EMAIL: action-bot@github.com # optional
+          COMMITTER_EMAIL: nguyenhunghung2806@gmail.com # optional
           AUTHOR_NAME: nguyenhung111 # optional
           AUTHOR_EMAIL: nguyenhunghung2806@gmail.com # optional
           # you can populate email-id with secretes instead
