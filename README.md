@@ -16,20 +16,3 @@ Here are some ideas to get you started:
 -->
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
-name: Waka Readme
-
-on:
-  # for manual workflow trigger
-  workflow_dispatch:
-  schedule:
-    # runs at 12 AM UTC (5:30 AM IST)
-    - cron: "0 0 * * *"
-
-jobs:
-  update-readme:
-    name: WakaReadme DevAND
-    runs-on: mac-latest
-    steps:
-      - uses: nguyehung111/README@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
