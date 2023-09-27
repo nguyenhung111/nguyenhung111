@@ -1,4 +1,4 @@
-name: blank
+name: WakaReadMe
 
 on:
   # for manual workflow trigger
@@ -12,7 +12,7 @@ jobs:
     name: WakaReadme DevMetrics
     runs-on: ubuntu-latest
     steps:
-      - uses: nguyenhung/blank@main
+      - uses: nguyenhung/WakaReadMe@main
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }} # required
           ### meta
